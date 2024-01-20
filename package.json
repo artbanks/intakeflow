@@ -23,9 +23,21 @@
     "luxon": "^3.4.4",
     "mongoose": "^8.0.3",
     "morgan": "^1.10.0",
-    "pug": "2.0.0-beta11"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
-  }
+  },
+  "description": "Tutorial \"Local Library\" website written in in Node/Express.",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdn/express-locallibrary-tutorial.git"
+  },
+  "author": "EK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdn/express-locallibrary-tutorial/issues"
+  },
+  "homepage": "https://github.com/mdn/express-locallibrary-tutorial#readme"
 }

@@ -77,6 +77,7 @@ exports.author_create_post = [
       family_name: req.body.family_name,
       date_of_birth: req.body.date_of_birth,
       date_of_death: req.body.date_of_death,
+      martian: req.body.martian,
     });
 
     if (!errors.isEmpty()) {
@@ -87,7 +88,19 @@ exports.author_create_post = [
         errors: errors.array(),
       });
       return;
-    } else {
+    } 
+    else if (author.martian = 'yes')
+    {
+      // Data from form is valid.
+      // Author is a martian
+
+      // Save author.
+      await author.save();
+      // Redirect to new author record.
+      res.redirect("/catalog/bookinstances");
+    }
+    
+    else {
       // Data from form is valid.
 
       // Save author.
